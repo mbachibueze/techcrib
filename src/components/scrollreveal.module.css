@@ -1,0 +1,15 @@
+/* Image.module.css */
+.image1 {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.image2 {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.image3 {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
