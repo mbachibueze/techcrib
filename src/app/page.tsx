@@ -1,13 +1,13 @@
 'use client'
 
-import { useEffect } from "react";
+
 import Image from "next/image";
 import React from 'react'
 import Autoplay from 'embla-carousel-autoplay'
 import useEmblaCarousel from 'embla-carousel-react'
 
 
-import { Card, CardContent } from "@/components/ui/card"
+
 import {
   Carousel,
   CarouselContent,
@@ -17,10 +17,9 @@ import {
 } from "@/components/ui/carousel"
 
 
-// import 'aos/dist/aos.css';
-// import AOS from 'aos';
 
-import { RiMenu4Line, RiQuillPenAiFill } from "react-icons/ri";
+
+import { RiQuillPenAiFill } from "react-icons/ri";
 import { FaStar, FaFacebook, FaTwitter, FaInstagram, FaChevronRight } from "react-icons/fa";
 import { HiOutlinePresentationChartBar } from "react-icons/hi";
 import { GiCubes } from "react-icons/gi";
@@ -44,9 +43,6 @@ import { NavigationBar } from "@/components/ui/navBar";
 
 export default function Home() {
 
-  const [emblaRef] = useEmblaCarousel({ loop: true }, [
-    Autoplay({ delay: 4000 })
-  ])
 
   const crew = [
     <div key="1" className="flex flex-col gap-2 w-fit rounded-lg">

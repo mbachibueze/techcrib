@@ -1,24 +1,19 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
-import Link from "next/link"; // Import Link from Next.js
-// import AOS from "aos"; // Import AOS animations
-// import "aos/dist/aos.css"; // Import AOS CSS
+import React, { useRef } from "react";
+
 
 import {
   DrawerBackdrop,
   DrawerBody,
   DrawerCloseTrigger,
   DrawerContent,
-  DrawerFooter,
-  DrawerHeader,
   DrawerRoot,
-  DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer"
 
 import { RiMenu4Line } from "react-icons/ri";
-import { Button, DrawerActionTrigger, Input, Stack } from "@chakra-ui/react";
+import { Button  } from "@chakra-ui/react";
 
 
 
