@@ -23,9 +23,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={poppins.variable}>
-      <style>
-          {`html { color-scheme: light; }`}
-        </style>
         <Provider>{children}</Provider>
       </body>
     </html>

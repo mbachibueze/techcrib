@@ -22,7 +22,7 @@ export const NavigationBar = () => {
 
   const ref = useRef<HTMLInputElement>(null)
 
-   /* eslint-disable react/no-unescaped-entities */
+
   return (
       <div>
         {/* Navigation */}
