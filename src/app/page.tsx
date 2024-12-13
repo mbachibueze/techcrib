@@ -246,7 +246,7 @@ export default function Home() {
   // }, []);
 
 
-
+   /* eslint-disable react/no-unescaped-entities */
   return (
       <div className="overflow-hidden">
         {/* Navigation */}
