@@ -28,7 +28,10 @@ export function ColorModeIcon() {
   return colorMode === "light" ? <LuSun /> : <LuMoon />;
 }
 
-interface ColorModeButtonProps extends Omit<IconButtonProps, "aria-label"> {}
+/* eslint-disable-next-line @typescript-eslint/no-empty-interface */
+interface ColorModeButtonProps extends Omit<IconButtonProps, "aria-label"> {
+  customProp?: string; // Example of a meaningful extension
+}
 
 export const ColorModeButton = React.forwardRef<
   HTMLButtonElement,

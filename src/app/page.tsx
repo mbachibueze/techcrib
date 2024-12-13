@@ -362,7 +362,7 @@ export default function Home() {
           >
             <CarouselContent className="-ml-1  flex items-center justify-between">
               {companies.map((divContent, index) => (
-                <CarouselItem key={index} className="pl-1  md:basis-1/2 lg:basis-1/3 flex justify-around gap-5">
+                <CarouselItem key={index} className="pl-1  md:basis-1/2 lg:basis-1/3 flex justify-around gap-5 bg-white p-1 ">
                   {divContent}
                 </CarouselItem>
               ))}

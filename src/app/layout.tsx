@@ -5,6 +5,7 @@ import { Provider } from "@/components/ui/provider"
 import { ReactNode } from "react";
 
 
+
 export const metadata = {
   title: "TechCrib",
   description: "Empowering businesses with cutting-edge solutions and innovative designs.",
@@ -22,6 +23,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={poppins.variable}>
+      <style>
+          {`html { color-scheme: light; }`}
+        </style>
         <Provider>{children}</Provider>
       </body>
     </html>

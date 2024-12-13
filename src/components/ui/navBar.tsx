@@ -17,6 +17,7 @@ import { Button  } from "@chakra-ui/react";
 
 
 
+
 export const NavigationBar = () => {
 
   const ref = useRef<HTMLInputElement>(null)
