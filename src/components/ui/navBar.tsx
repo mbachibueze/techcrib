@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useRef } from "react";
+import Link from 'next/link'
 
 
 import {
@@ -22,6 +23,8 @@ export const NavigationBar = () => {
 
   const ref = useRef<HTMLInputElement>(null)
 
+  
+
 
   return (
       <div>
@@ -34,7 +37,9 @@ export const NavigationBar = () => {
             {/* Nav list */}
             <div className="hidden lg:block">
               <ul className="flex gap-5">
-                <li className="hover:text-red-700 cursor-pointer">Home</li>
+                <Link href="/">
+                  <li className="cursor-pointer">Home</li>
+                </Link>
                 <li className="cursor-pointer">About Us</li>
                 <li className="cursor-pointer">Our Team</li>
                 <li className="cursor-pointer">Contact</li>
@@ -60,7 +65,9 @@ export const NavigationBar = () => {
                   <DrawerBody>
                   <div className="">
                     <ul className="flex flex-col py-5 gap-5">
-                      <li className="cursor-pointer">Home</li>
+                      <Link href="/">
+                        <li className="cursor-pointer">Home</li>
+                      </Link>
                       <li className="cursor-pointer">About Us</li>
                       <li className="cursor-pointer">Our Team</li>
                       <li className="cursor-pointer">Contact</li>

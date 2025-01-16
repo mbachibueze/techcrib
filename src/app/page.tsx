@@ -2,8 +2,8 @@
 
 
 import Image from "next/image";
-import React from 'react'
-import Autoplay from 'embla-carousel-autoplay'
+import React, { useState } from 'react';
+import Link from 'next/link'
 
 
 
@@ -19,7 +19,8 @@ import {
 
 
 
-import { RiQuillPenAiFill } from "react-icons/ri";
+import Autoplay from 'embla-carousel-autoplay'
+import { RiMenu4Line, RiQuillPenAiFill } from "react-icons/ri";
 import { FaStar, FaFacebook, FaTwitter, FaInstagram, FaChevronRight } from "react-icons/fa";
 import { HiOutlinePresentationChartBar } from "react-icons/hi";
 import { GiCubes } from "react-icons/gi";
@@ -43,6 +44,7 @@ import { NavigationBar } from "@/components/ui/navBar";
 
 export default function Home() {
 
+  const [activeService, setActiveService] = useState('Web Development');
 
   const crew = [
     <div key="1" className="flex flex-col gap-2 w-fit rounded-lg">
@@ -234,61 +236,80 @@ export default function Home() {
     </div>
   ));
 
-  // useEffect(() => {
-  //   AOS.init({
-  //     duration: 500, // Animation duration in milliseconds
-  //     easing: 'ease-in-out', // Animation easing
-  //   });
-  // }, []);
+  const services = [
+    {
+      name: 'Web Development',
+      description:
+        'Is it a game idea? Or a business? Or anything else? If you can dream it, we can code it! Our Apps are well designed, fluid and loved by everyone',
+      items: [
+        'Building for iOS and Android Platform',
+        'Flutter and Java Development',
+        'Routine Maintenance',
+      ],
+      image: 'https://img.freepik.com/free-photo/close-up-image-programer-working-his-desk-office_1098-18707.jpg?uid=R77772689&ga=GA1.1.746289648.1661586601&semt=ais_hybrid',
+    },
+    {
+      name: 'App Development',
+      description:
+        'From conceptualisation to launch, we build user-friendly mobile apps that meet your specific business needs.',
+      items: [
+        'Custom app development',
+        'Cross-platform compatibility',
+        'Regular updates and support',
+      ],
+      image: 'https://img.freepik.com/free-vector/app-development-banner_33099-1720.jpg?uid=R77772689&ga=GA1.1.746289648.1661586601&semt=ais_hybrid',
+    },
+    {
+      name: 'Machine Learning',
+      description:
+        'Empowering your applications with advanced AI and ML solutions tailored to your requirements.',
+      items: [
+        'Predictive analytics',
+        'Natural language processing',
+        'Custom ML model development',
+      ],
+      image: 'https://img.freepik.com/free-photo/ai-technology-brain-background-digital-transformation-concept_53876-125206.jpg?uid=R77772689&ga=GA1.1.746289648.1661586601&semt=ais_hybrid',
+    },
+  ];
+
+  const currentService = services.find((service) => service.name === activeService);
 
 
    /* eslint-disable react/no-unescaped-entities */
   return (
       <div className="overflow-hidden">
         {/* Navigation */}
-        {/* <section className="fixed w-[100%] z-50 bg-white text-black">
-          <div className="flex justify-between py-3 items-center md:w-[90%] w-[95%] m-auto border-b-2" >
-            <div className="text-xl font-mono font-bold">TechCrib</div>
-            <div className="navlinks items-center hidden lg:block">
-              <ul className="flex gap-5">
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Our Team</li>
-                <li>Contact</li>
-              </ul>
-            </div>
-            <div className="lg:hidden sm:block toggle-btn cursor-pointer" data-aos="fade-left" data-aos-duration="1400">
-              <RiMenu4Line size={24}/>
-            </div>
-
-          </div>
-        </section> */}
         <NavigationBar/>
 
         {/* Hero Section */}
         <section className="hero md:w-[90%] w-[95%] m-auto flex flex-col justify-around py-20 gap-5 lg:grid lg:grid-cols-2  h-screen text-center lg:text-left">
-        <div className="grid place-items-center " data-aos="fade-right" data-aos-duration="800">
-          <div className="flex flex-col gap-12">
-            <div className="lg:text-[4vw] text-[7vw] font-semibold">
-              Advance your <span className="bg-gradient-to-r from-[#272ba0] to-[#a0baff] bg-clip-text text-transparent">business</span>  to new heights.
-            </div>
-            <div className="flex flex-col gap-4">
-              <p>The art of visual communication, creatively impacting the world around us-one good design at a time</p>
-              <div className="flex gap-3 text-center m-auto lg:m-0 md:text-base text-[13px]">
-                <button className="border-3 border-[#3d44ee] bg-[#3d44ee] text-white p-2 rounded-md">Get Started on a Project</button>
-                <button className="border-2 border-[#3d44ee] p-2 px-10 rounded-md">View Projects</button>
+
+          <div className="grid place-items-center " data-aos="fade-right" data-aos-duration="800">
+            
+            <div className="flex flex-col gap-12">
+              <div className="lg:text-[4vw] text-[7vw] font-semibold">
+                Advance your <span className="bg-gradient-to-r from-[#272ba0] to-[#a0baff] bg-clip-text text-transparent">business</span>  to new heights.
+              </div>
+              <div className="flex flex-col gap-4">
+                <p>The art of visual communication, creatively impacting the world around us-one good design at a time</p>
+                <div className="flex gap-3 text-center m-auto lg:m-0 md:text-base text-[13px]">
+                  <button className="border-3 border-[#3d44ee] bg-[#3d44ee] text-white p-2 rounded-md">Get Started on a Project</button>
+                  <Link href="/projects">
+                    <button className="border-2 border-[#3d44ee] p-2 px-10 rounded-md hover:text-[#3d44ee]">View Projects</button>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="grid place-items-center" data-aos="fade-up" data-aos-duration="1400">
-        <Image
-            src="/techy.png"  // Path from the public folder
-            alt="Description of Image"
-            width={600}                  // Image width
-            height={500}                 // Image height
-          />
-        </div>
+
+          <div className="grid place-items-center" data-aos="fade-up" data-aos-duration="1400">
+          <Image
+              src="/techy.png"  // Path from the public folder
+              alt="Description of Image"
+              width={600}                  // Image width
+              height={500}                 // Image height
+            />
+          </div>
         </section>
 
         {/* Ratings */}
@@ -438,6 +459,58 @@ export default function Home() {
           <div className="md:grid md:grid-cols-2 flex flex-col gap-5 items-center text-center md:text-left">
             <h2 className="lg:text-5xl text-3xl font-semibold">Services That Add Significant <span className="bg-gradient-to-r from-[#272ba0] to-[#a0baff] bg-clip-text text-transparent">Business</span> Value</h2>
             <p className="text-sm lg:text-lg text-gray-500">Our offerings encompass services that serce as startup mentoring or include, contributing to the enhanced value proposition of your business</p>
+          </div>
+
+
+          <div className="place-items-center justify-center gap-5 flex flex-col w-fit m-auto ">
+
+              {/* Header Tabs */}
+            <div className="grid grid-cols-3 sm:text-base text-[2.7vw] sm:gap-12 gap-4 bg-[#c4d5ff] p-2 rounded w-fit">
+              {services.map((service) => (
+                <span
+                  key={service.name}
+                  className={`services ${
+                    activeService === service.name ? 'bg-[#18194e] text-white' : ''
+                  }`}
+                  onClick={() => setActiveService(service.name)}
+                >
+                  {service.name}
+                </span>
+              ))}
+            </div>
+            
+            {/* Content Area */}
+            <div className="border-[3px] border-[#c4d5ff] rounded-md sm:w-[624.16px] w-fit p-2">
+              <div className="grid sm:grid-cols-2 grid-cols-1 gap-4 m-auto">
+                {/* Image */}
+                <div className="bg-[#c4d5ff] rounded-sm sm:block sm:h-full h-[200px]">
+                  <img
+                    src={currentService?.image}
+                    alt={currentService?.name}
+                    className="rounded-md w-full h-full object-cover "
+                  />
+                </div>
+
+                {/* Write up */}
+                <div className="flex flex-col gap-2">
+                  <h2 className="font-bold text-[#18194e] text-lg sm:text-left text-center">{currentService?.name}</h2>
+                  <p className="text-sm text-gray-500 sm:text-left text-center">{currentService?.description}</p>
+                  <div className="text-gray-500 text-sm w-full sm:flex grid place-items-center">
+                    <ul className="flex flex-col gap-2">
+                      {currentService?.items.map((item, index) => (
+                        <li key={index}>
+                          <span className="text-white text-xs px-2 bg-[#5a6afa] rounded-full">
+                            {index + 1}
+                          </span>{' '}
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
           <div>
             <Accordion type="single" collapsible>
