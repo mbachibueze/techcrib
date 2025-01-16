@@ -8,7 +8,7 @@ import { FaChevronRight, FaFacebookF, FaInstagram, FaTwitter } from 'react-icons
 
 import ProjectCard, { CardProps } from '@/components/ui/projectsComponets'
 
-const page = () => {
+const Page = () => {
 
   const [cardData] =  useState<CardProps[]>([
     {
@@ -144,4 +144,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
