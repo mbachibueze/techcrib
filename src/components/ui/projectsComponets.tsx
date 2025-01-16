@@ -1,6 +1,5 @@
 import React from 'react'
 
-import {LucideIcon, Waypoints} from "lucide-react";
 import { cn } from "@/lib/utils";
 
 
