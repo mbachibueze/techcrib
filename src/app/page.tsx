@@ -512,40 +512,44 @@ export default function Home() {
             </div>
 
           </div>
-          <div>
-            <Accordion type="single" collapsible>
+
+        </section>
+
+        {/* FAQ's */}
+        <section className="md:w-[90%] w-[95%] m-auto py-10 flex flex-col gap-4">
+          <div className="  md:text-[4vw] lg:text-[3vw] text-[6vw] text-center">FAQ's</div>
+          <Accordion type="single" collapsible>
               <AccordionItem value="item-1">
                 <AccordionTrigger className="sm:text-lg text-md">What services do you offer to advance my business?</AccordionTrigger>
-                <AccordionContent className="text-gray-500 sm:text-md text-xs ">
+                <AccordionContent className="text-gray-500 sm:text-base text-xs ">
                   We provide comprehensive services, including custom design, live testing, skilled development, and thorough research to ensure your business reaches new heights. Our solutions are tailored to meet your specific requirements and optimise your workflow.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger className="sm:text-lg text-md">How do you ensure the designs align with my requirements?</AccordionTrigger>
-                <AccordionContent className="text-gray-500 sm:text-md text-xs ">
+                <AccordionContent className="text-gray-500 sm:text-base text-xs ">
                   We collaborate closely with our clients, understanding their needs and preferences to create designs that reflect their vision while effectively communicating their brand's message.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger className="sm:text-lg text-md">What is your workflow process?</AccordionTrigger>
-                <AccordionContent className="text-gray-500 sm:text-md text-xs ">
+                <AccordionContent className="text-gray-500 sm:text-base text-xs ">
                   Our workflow is simple, dynamic, and efficient. We begin with in-depth research, proceed with designing and development, and conclude with live testing to ensure a seamless and optimal result.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
                 <AccordionTrigger className="sm:text-lg text-md">What is included in the live testing phase?</AccordionTrigger>
-                <AccordionContent className="text-gray-500 sm:text-md text-xs ">
+                <AccordionContent className="text-gray-500 sm:text-base text-xs ">
                   Live testing involves deploying the completed project in a real-world environment to identify and resolve any issues. This ensures the final product is flawless and ready for your audience.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-5">
                 <AccordionTrigger className="sm:text-lg text-md">How does your work add value to my business?</AccordionTrigger>
-                <AccordionContent className="text-gray-500 sm:text-md text-xs ">
+                <AccordionContent className="text-gray-500 sm:text-base text-xs ">
                   Our services are designed to not just meet but exceed your expectations. By leveraging startup mentoring, enhanced value propositions, and cutting-edge operational methods, we help your business achieve significant growth and success.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
-          </div>
         </section>
 
         {/* Evolution */}
@@ -557,7 +561,9 @@ export default function Home() {
                 <h1 className=" md:text-[4vw] text-[6vw] text-center md:text-left">The Evolution of Our Firm</h1>
               </div>
               <div className=" grid place-items-center md:place-items-start">
-                <button className="bg-[#3d44ee] py-3 px-6 md:px-16 text-white rounded-full items-start text-center shrink-0">Learn More</button>
+                <Link href='/ourStory'>
+                  <button className="bg-[#3d44ee] py-3 px-6 md:px-16 text-white rounded-full items-start text-center shrink-0">Learn More</button>
+                </Link>
               </div>
             </div>
 
@@ -640,7 +646,9 @@ export default function Home() {
 
                 <div className="flex flex-col gap-5 cta-li ">
                   <h3 className="text-white font-semibold">About</h3>
-                  <p>Our Story</p>
+                  <Link href="/ourStory">
+                    <p>Our Story</p>
+                  </Link>
                   <p>Benefits</p>
                   <p>Team</p>
                   <p>Careers</p>

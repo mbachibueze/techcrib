@@ -4,10 +4,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
+:root {
+  --font-poppins: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--font-poppins);
+}
+
+
 * {
   font-family: 'Poppins';
-
+  
 }
+
 
 @layer base {
   :root {

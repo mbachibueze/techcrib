@@ -1,6 +1,7 @@
 
 import "./globals.css";
 import { Poppins } from "next/font/google";
+
 import { Provider } from "@/components/ui/provider"
 import { ReactNode } from "react";
 
@@ -22,7 +23,7 @@ const poppins = Poppins({
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={poppins.variable}>
+      <body className={poppins.variable} style={poppins.style}>
         <Provider>{children}</Provider>
       </body>
     </html>

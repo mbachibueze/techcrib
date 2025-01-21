@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {LucideIcon, Waypoints} from "lucide-react";
+
 import { cn } from "@/lib/utils";
 
 
@@ -31,12 +31,12 @@ export default function ProjectCard(props: CardProps){
           <div className="absolute bottom-0 left-0 w-full h-2/3 bg-gradient-to-t from-black to-transparent transition-opacity duration-1000 ease-in-out group-hover:opacity-0"></div>
 
           {/* Project Name */}
-          <div className="absolute bottom-0 left-0 w-full   text-center py-4 transition-all duration-1000 ease-in-out group-hover:bottom-[75%] text-white group-hover:text-[#18194e] z-10 ">
+          <div className="absolute bottom-0 left-0 w-full   text-center py-4 transition-all duration-1000 ease-in-out group-hover:bottom-[75%] text-white group-hover:text-gray-400 z-10 ">
             <h2 className="text-lg font-bold uppercase">{props.projectName}</h2>
           </div>
 
           {/* Description and Languages */}
-          <div className="absolute bottom-0 left-0 w-full h-[100%] grid place-items-center bg-[#3c41ef] bg-opacity-90 text-white text-center p-4 opacity-0 transition-all duration-1000 ease-in-out group-hover:opacity-100">
+          <div className="absolute bottom-0 left-0 w-full h-[100%] grid place-items-center bg-[#151750] bg-opacity-90 text-white text-center p-4 opacity-0 transition-all duration-1000 ease-in-out group-hover:opacity-100">
             <div className='flex flex-col gap-3 flex-wrap'>
               <p className="text-sm mb-2 ">{props.description}</p>
               <div className="flex justify-center gap-2 text-xs flex-wrap">

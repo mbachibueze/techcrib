@@ -40,9 +40,15 @@ export const NavigationBar = () => {
                 <Link href="/">
                   <li className="cursor-pointer">Home</li>
                 </Link>
-                <li className="cursor-pointer">About Us</li>
-                <li className="cursor-pointer">Our Team</li>
-                <li className="cursor-pointer">Contact</li>
+                <Link href="/ourStory">
+                  <li className="cursor-pointer">About Us</li>
+                </Link>
+                <Link href="/team">
+                  <li className="cursor-pointer">Our Team</li>
+                </Link>
+                <Link href="/contact">
+                  <li className="cursor-pointer">Contact</li>
+                </Link>
               </ul>
             </div>
 
@@ -63,14 +69,20 @@ export const NavigationBar = () => {
                 </DrawerTrigger>
                 <DrawerContent>
                   <DrawerBody>
-                  <div className="">
+                  <div className="p-1">
                     <ul className="flex flex-col py-5 gap-5">
                       <Link href="/">
                         <li className="cursor-pointer">Home</li>
                       </Link>
-                      <li className="cursor-pointer">About Us</li>
-                      <li className="cursor-pointer">Our Team</li>
-                      <li className="cursor-pointer">Contact</li>
+                      <Link href="/ourStory">
+                        <li className="cursor-pointer">About Us</li>
+                      </Link>
+                      <Link href="/team">
+                        <li className="cursor-pointer">Our Team</li>
+                      </Link>
+                      <Link href="/contact">
+                        <li className="cursor-pointer">Contact</li>
+                      </Link>
                     </ul>
                   </div>
                   </DrawerBody>
