@@ -20,7 +20,7 @@ import {
 
 
 import Autoplay from 'embla-carousel-autoplay'
-import { RiMenu4Line, RiQuillPenAiFill } from "react-icons/ri";
+import { RiQuillPenAiFill } from "react-icons/ri";
 import { FaStar, FaFacebook, FaTwitter, FaInstagram, FaChevronRight } from "react-icons/fa";
 import { HiOutlinePresentationChartBar } from "react-icons/hi";
 import { GiCubes } from "react-icons/gi";

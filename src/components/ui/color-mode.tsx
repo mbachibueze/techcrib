@@ -28,8 +28,6 @@ export function ColorModeIcon() {
   return colorMode === "light" ? <LuSun /> : <LuMoon />;
 }
 
-export interface ColorModeProviderProps extends ThemeProviderProps {}
-
 interface ColorModeButtonProps extends Omit<IconButtonProps, "aria-label"> {
   customProp?: string; // Example of a meaningful extension
 }

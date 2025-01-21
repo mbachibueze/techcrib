@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from "react";
+
 import { NavigationBar } from '@/components/ui/navBar'
 import Footer from "@/components/ui/footer";
 import React from 'react'
@@ -8,9 +9,10 @@ import { FaChevronRight, FaFacebookF, FaInstagram, FaTwitter } from 'react-icons
 
 import ProjectCard, { CardProps } from '@/components/ui/projectsComponets'
 
+
 const Projects = () => {
 
-  const [cardData, setCardData] =  useState<CardProps[]>([
+  const [cardData] =  useState<CardProps[]>([
     {
       backgroundImage: 'https://img.freepik.com/free-photo/medium-shot-empowered-business-people_23-2149333006.jpg?uid=R77772689&ga=GA1.1.746289648.1661586601&semt=ais_hybrid', // Replace with your project image URL
       projectName: 'Eazzi Exchange',
@@ -51,6 +53,7 @@ const Projects = () => {
 
 
 
+   /* eslint-disable react/no-unescaped-entities */
   return (
     <div className='overflow-hidden'>
       <NavigationBar/>
