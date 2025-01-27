@@ -22,29 +22,29 @@ const Projects = () => {
     },
     {
       backgroundImage: 'https://img.freepik.com/free-photo/business-leader-interviewing-job-candidate_74855-1146.jpg?uid=R77772689&ga=GA1.1.746289648.1661586601&semt=ais_hybrid', // Replace with your project image URL
-      projectName: 'Portfolio Site',
-      description: 'A sleek personal portfolio showcasing projects.',
+      projectName: 'Bill Payment App',
+      description: 'A bill payment app that allows users to pay bills with ease.',
       languages: ['Next.js', 'Tailwind', 'TypeScript', 'Node.js', 'MongoDb'],
       projectLink: 'https://example.com/tech-website',
     },
     {
       backgroundImage: 'https://img.freepik.com/free-photo/close-up-young-colleagues-having-meeting_23-2149060229.jpg?uid=R77772689&ga=GA1.1.746289648.1661586601&semt=ais_hybrid', // Replace with your project image URL
-      projectName: 'Portfolio Site',
-      description: 'A sleek personal portfolio showcasing projects.',
+      projectName: 'Inventory Management System',
+      description: 'A system that helps businesses manage their inventory with ease.',
       languages: ['Next.js', 'Chakra UI', 'TypeScript'],
       projectLink: 'https://example.com/tech-website',
     },
     {
       backgroundImage: 'https://img.freepik.com/free-photo/close-up-colleagues-chatting-table_23-2149304764.jpg?uid=R77772689&ga=GA1.1.746289648.1661586601&semt=ais_hybrid', // Replace with your project image URL
-      projectName: 'Portfolio Site',
-      description: 'A sleek personal portfolio showcasing projects.',
+      projectName: 'Real Estate Website',
+      description: 'A website that helps users find the perfect home for them.',
       languages: ['Next.js', 'Chakra UI', 'TypeScript'],
       projectLink: 'https://example.com/tech-website',
     },
     {
       backgroundImage: 'https://img.freepik.com/free-photo/medium-shot-empowered-business-people_23-2149333006.jpg?uid=R77772689&ga=GA1.1.746289648.1661586601&semt=ais_hybrid', // Replace with your project image URL
-      projectName: 'Eazzi Exchange',
-      description: 'A Crypto trading platform for buying and selling of gift-cards and iTunes',
+      projectName: 'Home Automation System',  
+      description: 'An App that helps users control their home appliances with ease.',
       languages: ['HTML', 'CSS', 'Javascript'],
       projectLink: 'https://eazii-exchange-mtap.vercel.app/',
     },
@@ -59,7 +59,7 @@ const Projects = () => {
       <NavigationBar/>
 
       {/* Hero Section */}
-      <div className='w-[100%] sm:h-[40vh] h-[30vh] sm:mt-0 mt-10  grid place-items-center bg-[#dee9ff]'>
+      <div className='w-[100%] sm:h-[40vh] h-[30vh] sm:mt-0 mt-10  grid place-items-center '>
         <div className="lg:text-[4vw] text-[7vw]  text-center font-semibold">
               Advance your <span className="bg-gradient-to-r from-[#272ba0] to-[#a0baff] bg-clip-text text-transparent">business</span>  to new heights.
           </div>

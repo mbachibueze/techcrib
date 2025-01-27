@@ -100,7 +100,7 @@ export default function Home() {
         notes: "",
       });
 
-      toaster.create({ title: "Form submitted successfully!", description: "We'll get back to you shortly.", type: "success", duration: 3000, placement: "bottom" });
+      toaster.create({ title: "Form submitted successfully!", description: "We'll get back to you shortly.", type: "success", duration: 3000 });
       console.log("Response:", response.data);
     } catch (error) {
       toaster.create({ title: "Submission failed", description: "An error occurred while submitting the form. Please try again.", type: "error", duration: 3000 });
@@ -118,14 +118,13 @@ export default function Home() {
     <div key="1" className="flex flex-col gap-2 w-fit rounded-lg">
       <div>
         <img
-          src="https://img.freepik.com/free-photo/delivery-concept-handsome-african-american-delivery-man-crossed-arms-isolated-grey-studio-background-copy-space_1258-1277.jpg?w=740&t=st=1664507814~exp=1664508414~hmac=3398a06ec9c1fbc1dcee56b95d7902027c4b48c368b809fbe06f9e5a90f460c2" // Replace with the image URL
-          alt="Description of the image"
+          src="https://img.freepik.com/free-photo/worldface-american-man-white-background_53876-31194.jpg?uid=R77772689&ga=GA1.1.746289648.1661586601&semt=ais_hybrid"
           style={{ width: "300px", height: "250px", borderRadius: "15px" }} // Styling
         />
       </div>
       <div className="flex justify-between items-center">
         <div>
-          <h3 className="text-lg text-bold">Candice Wu</h3>
+          <h3 className="text-lg text-bold">Temitope</h3>
           <p className="text-sm text-gray-600">Founder & CEO</p>
         </div>
         <div className="flex gap-2">
@@ -154,15 +153,14 @@ export default function Home() {
     <div key="2" className="flex flex-col gap-2 w-fit rounded-lg">
       <div>
         <img
-          src="https://img.freepik.com/free-photo/delivery-concept-handsome-african-american-delivery-man-crossed-arms-isolated-grey-studio-background-copy-space_1258-1277.jpg?w=740&t=st=1664507814~exp=1664508414~hmac=3398a06ec9c1fbc1dcee56b95d7902027c4b48c368b809fbe06f9e5a90f460c2" // Replace with the image URL
-          alt="Description of the image"
+          src="https://img.freepik.com/premium-photo/minimal-head-shoulders-portrait-handsome-africanamerican-man-looking-camera-against-blue_236854-33949.jpg?uid=R77772689&ga=GA1.1.746289648.1661586601&semt=ais_hybrid"
           style={{ width: "300px", height: "250px", borderRadius: "15px" }} // Styling
         />
       </div>
       <div className="flex justify-between items-center">
         <div>
-          <h3 className="text-lg text-bold">Candice Wu</h3>
-          <p className="text-sm text-gray-600">Founder & CEO</p>
+          <h3 className="text-lg text-bold">James</h3>
+          <p className="text-sm text-gray-600">Backend Dev</p>
         </div>
         <div className="flex gap-2">
           <div className="bg-black h-7 w-7 grid place-items-center rounded-full">
@@ -190,15 +188,14 @@ export default function Home() {
     <div key="3" className="flex flex-col gap-2 w-fit rounded-lg">
       <div>
         <img
-          src="https://img.freepik.com/free-photo/delivery-concept-handsome-african-american-delivery-man-crossed-arms-isolated-grey-studio-background-copy-space_1258-1277.jpg?w=740&t=st=1664507814~exp=1664508414~hmac=3398a06ec9c1fbc1dcee56b95d7902027c4b48c368b809fbe06f9e5a90f460c2" // Replace with the image URL
-          alt="Description of the image"
+          src="https://img.freepik.com/premium-photo/afro-american-woman-mixed-race-posing-dark-background-urban-clothes-modern-pretty-smiling_188913-1681.jpg?uid=R77772689&ga=GA1.1.746289648.1661586601&semt=ais_hybrid"
           style={{ width: "300px", height: "250px", borderRadius: "15px" }} // Styling
         />
       </div>
       <div className="flex justify-between items-center">
         <div>
-          <h3 className="text-lg text-bold">Candice Wu</h3>
-          <p className="text-sm text-gray-600">Founder & CEO</p>
+          <h3 className="text-lg text-bold">Chinwe</h3>
+          <p className="text-sm text-gray-600">Frontend Dev</p>
         </div>
         <div className="flex gap-2">
           <div className="bg-black h-7 w-7 grid place-items-center rounded-full">
@@ -226,15 +223,15 @@ export default function Home() {
     <div key="4" className="flex flex-col gap-2 w-fit rounded-lg">
       <div>
         <img
-          src="https://img.freepik.com/free-photo/delivery-concept-handsome-african-american-delivery-man-crossed-arms-isolated-grey-studio-background-copy-space_1258-1277.jpg?w=740&t=st=1664507814~exp=1664508414~hmac=3398a06ec9c1fbc1dcee56b95d7902027c4b48c368b809fbe06f9e5a90f460c2" // Replace with the image URL
+          src="https://img.freepik.com/free-photo/confident-business-woman-portrait-smiling-face_53876-137693.jpg?uid=R77772689&ga=GA1.1.746289648.1661586601&semt=ais_hybrid" 
           alt="Description of the image"
           style={{ width: "300px", height: "250px", borderRadius: "15px" }} // Styling
         />
       </div>
       <div className="flex justify-between items-center">
         <div>
-          <h3 className="text-lg text-bold">Candice Wu</h3>
-          <p className="text-sm text-gray-600">Founder & CEO</p>
+          <h3 className="text-lg text-bold">Adeola</h3>
+          <p className="text-sm text-gray-600">Data Scientist </p>
         </div>
         <div className="flex gap-2">
           <div className="bg-black h-7 w-7 grid place-items-center rounded-full">
