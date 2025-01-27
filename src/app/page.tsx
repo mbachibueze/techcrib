@@ -5,7 +5,22 @@ import Image from "next/image";
 import React, { useState } from 'react';
 import Link from 'next/link'
 
+import axios from "axios";
 
+import {
+  DrawerActionTrigger,
+  DrawerBackdrop,
+  DrawerBody,
+  DrawerCloseTrigger,
+  DrawerContent,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerRoot,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer"
+import { Button } from "@chakra-ui/react"
+import { Toaster, toaster } from "@/components/ui/toaster"
 
 
 import {
@@ -43,6 +58,59 @@ import { NavigationBar } from "@/components/ui/navBar";
 
 
 export default function Home() {
+
+
+  const [formData, setFormData] = useState({
+    projectName: "",
+    projectDescription: "",
+    features: "",
+    deadline: "",
+    budget: "",
+    contact: "",
+    notes: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+  const [successMessage, setSuccessMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { id, value } = e.target;
+    setFormData({ ...formData, [id]: value });
+  };
+
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+
+
+    const apiUrl = "https://jsonplaceholder.typicode.com/posts"; // Dummy API URL
+
+    try {
+      const response = await axios.post(apiUrl, formData);
+
+      setFormData({
+        projectName: "",
+        projectDescription: "",
+        features: "",
+        deadline: "",
+        budget: "",
+        contact: "",
+        notes: "",
+      });
+
+      toaster.create({ title: "Form submitted successfully!", description: "We'll get back to you shortly.", type: "success", duration: 3000, placement: "bottom" });
+      console.log("Response:", response.data);
+    } catch (error) {
+      toaster.create({ title: "Submission failed", description: "An error occurred while submitting the form. Please try again.", type: "error", duration: 3000 });
+      console.error("Error:", error);
+    } finally {
+      setLoading(false);
+      
+    }
+  };
+
 
   const [activeService, setActiveService] = useState('Web Development');
 
@@ -280,6 +348,7 @@ export default function Home() {
       <div className="overflow-hidden">
         {/* Navigation */}
         <NavigationBar/>
+        <Toaster />
 
         {/* Hero Section */}
         <section className="hero md:w-[90%] w-[95%] m-auto flex flex-col justify-around py-20 gap-5 lg:grid lg:grid-cols-2  h-screen text-center lg:text-left">
@@ -293,7 +362,156 @@ export default function Home() {
               <div className="flex flex-col gap-4">
                 <p>The art of visual communication, creatively impacting the world around us-one good design at a time</p>
                 <div className="flex gap-3 text-center m-auto lg:m-0 md:text-base text-[13px]">
-                  <button className="border-3 border-[#3d44ee] bg-[#3d44ee] text-white p-2 rounded-md">Get Started on a Project</button>
+
+                  
+                  
+                <DrawerRoot placement="bottom">
+                  <DrawerBackdrop />
+                  <DrawerTrigger asChild>
+                    <button className="border-3 border-[#3d44ee] bg-[#3d44ee] text-white p-2 rounded-md">
+                      Get Started on a Project
+                    </button>
+                  </DrawerTrigger>
+                  <DrawerContent roundedTop="lg" className="grid place-items-center ">
+                    <div className="lg:w-[50%] md:w-[70%] sm:w-[80%] w-[100%] m-auto">
+                      <DrawerHeader>
+                        <DrawerTitle className="font-bold text-lg">Start Your Project</DrawerTitle>
+                      </DrawerHeader>
+                      <DrawerBody>
+                        <form className="space-y-4" onSubmit={handleSubmit}>
+                          {/* Project Name */}
+                          <div>
+                            <label htmlFor="projectName" className="block text-sm font-medium">
+                              Project Name
+                            </label>
+                            <input
+                              id="projectName"
+                              type="text"
+                              placeholder="Enter project name"
+                              className="w-full p-2 border rounded-md"
+                              value={formData.projectName}
+                              onChange={handleChange}
+                              required
+                            />
+                          </div>
+
+                          {/* Project Description */}
+                          <div>
+                            <label htmlFor="projectDescription" className="block text-sm font-medium">
+                              Project Description
+                            </label>
+                            <textarea
+                              id="projectDescription"
+                              placeholder="Briefly describe the project"
+                              className="w-full p-2 border rounded-md"
+                              rows={4}
+                              value={formData.projectDescription}
+                              onChange={handleChange}
+                              required
+                            />
+                          </div>
+
+                          {/* Features */}
+                          <div>
+                            <label htmlFor="features" className="block text-sm font-medium">
+                              Key Features or Requirements
+                            </label>
+                            <textarea
+                              id="features"
+                              placeholder="List the key features you want in the project"
+                              className="w-full p-2 border rounded-md"
+                              rows={3}
+                              value={formData.features}
+                              onChange={handleChange}
+                            />
+                          </div>
+
+                          {/* Deadline */}
+                          <div>
+                            <label htmlFor="deadline" className="block text-sm font-medium">
+                              Deadline
+                            </label>
+                            <input
+                              id="deadline"
+                              type="date"
+                              className="w-full p-2 border rounded-md"
+                              value={formData.deadline}
+                              onChange={handleChange}
+                            />
+                          </div>
+
+                          {/* Budget */}
+                          <div>
+                            <label htmlFor="budget" className="block text-sm font-medium">
+                              Estimated Budget
+                            </label>
+                            <input
+                              id="budget"
+                              type="text"
+                              placeholder="Enter your budget (e.g., $5000)"
+                              className="w-full p-2 border rounded-md"
+                              value={formData.budget}
+                              onChange={handleChange}
+                            />
+                          </div>
+
+                          {/* Contact Information */}
+                          <div>
+                            <label htmlFor="contact" className="block text-sm font-medium">
+                              Contact Email
+                            </label>
+                            <input
+                              id="contact"
+                              type="email"
+                              placeholder="Enter your email address"
+                              className="w-full p-2 border rounded-md"
+                              value={formData.contact}
+                              onChange={handleChange}
+                              required
+                            />
+                          </div>
+
+                          {/* Additional Notes */}
+                          <div>
+                            <label htmlFor="notes" className="block text-sm font-medium">
+                              Additional Notes
+                            </label>
+                            <textarea
+                              id="notes"
+                              placeholder="Any other details you'd like to share"
+                              className="w-full p-2 border rounded-md"
+                              rows={3}
+                              value={formData.notes}
+                              onChange={handleChange}
+                            />
+                          </div>
+
+                          {/* Submit Button */}
+
+                          <div className="flex justify-end space-x-2">
+                            <DrawerActionTrigger asChild>
+                              <button
+                                type="button"
+                                className="border border-gray-300 px-4 py-2 rounded-md"
+                              >
+                                Cancel
+                              </button>
+                            </DrawerActionTrigger>
+                            <button
+                              type="submit"
+                              className="bg-[#3d44ee] text-white px-4 py-2 rounded-md"
+                              disabled={loading}
+                            >
+                              {loading ? "Submitting..." : "Submit"}
+                            </button>
+                          </div>
+                        </form>
+                      </DrawerBody>
+                      <DrawerCloseTrigger />
+                    </div>
+                  </DrawerContent>
+                </DrawerRoot>
+
                   <Link href="/projects">
                     <button className="border-2 border-[#3d44ee] p-2 px-10 rounded-md hover:text-[#3d44ee]">View Projects</button>
                   </Link>
