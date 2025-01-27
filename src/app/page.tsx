@@ -372,8 +372,8 @@ export default function Home() {
                       Get Started on a Project
                     </button>
                   </DrawerTrigger>
-                  <DrawerContent roundedTop="lg" className="grid place-items-center ">
-                    <div className="lg:w-[50%] md:w-[70%] sm:w-[80%] w-[100%] m-auto">
+                  <DrawerContent roundedTop="lg" className="grid place-items-center overflow-y-auto max-h-[90vh]">
+                    <div className="lg:w-[50%] md:w-[70%] sm:w-[80%] w-[100%] m-auto scrollbar-none">
                       <DrawerHeader>
                         <DrawerTitle className="font-bold text-lg">Start Your Project</DrawerTitle>
                       </DrawerHeader>
