@@ -266,7 +266,7 @@ export default function Home() {
   const companies = [
     <Image
     key='1'
-      src="/logo.png"  // Path from the public folder
+      src="/adyen.svg"  // Path from the public folder
       alt="Description of Image"
       width={150}                  // Image width
       height={100}                 // Image height
@@ -274,7 +274,7 @@ export default function Home() {
 
     <Image
     key='2'
-      src="/logo.png"  // Path from the public folder
+      src="/meta.svg"  // Path from the public folder
       alt="Description of Image"
       width={150}                  // Image width
       height={100}                 // Image height
@@ -282,7 +282,7 @@ export default function Home() {
 
     <Image
     key='3'
-      src="/logo.png"  // Path from the public folder
+      src="/netflix.svg"  // Path from the public folder
       alt="Description of Image"
       width={150}                  // Image width
       height={100}                 // Image height
@@ -290,7 +290,39 @@ export default function Home() {
 
     <Image
     key='4'
-      src="/logo.png"  // Path from the public folder
+      src="/microsoft.svg"  // Path from the public folder
+      alt="Description of Image"
+      width={150}                  // Image width
+      height={100}                 // Image height
+    />,
+
+    <Image
+    key='4'
+      src="/windows.svg"  // Path from the public folder
+      alt="Description of Image"
+      width={150}                  // Image width
+      height={100}                 // Image height
+    />,
+    
+    <Image
+    key='4'
+      src="/mastercard.svg"  // Path from the public folder
+      alt="Description of Image"
+      width={150}                  // Image width
+      height={100}                 // Image height
+    />,
+
+    <Image
+    key='4'
+      src="/arduino.svg"  // Path from the public folder
+      alt="Description of Image"
+      width={150}                  // Image width
+      height={100}                 // Image height
+    />,
+
+    <Image
+    key='4'
+      src="/axios.svg"  // Path from the public folder
       alt="Description of Image"
       width={150}                  // Image width
       height={100}                 // Image height
@@ -599,7 +631,7 @@ export default function Home() {
           >
             <CarouselContent className="-ml-1  flex items-center justify-between">
               {companies.map((divContent, index) => (
-                <CarouselItem key={index} className="pl-1  md:basis-1/2 lg:basis-1/3 flex justify-around gap-5 bg-white p-1 ">
+                <CarouselItem key={index} className="pl-1  md:basis-1/2 lg:basis-1/3 flex justify-around gap-5 p-1 ">
                   {divContent}
                 </CarouselItem>
               ))}
