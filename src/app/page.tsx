@@ -709,7 +709,7 @@ export default function Home() {
 
                 {/* Write up */}
                 <div className="flex flex-col gap-2">
-                  <h2 className="font-bold text-[#18194e] text-lg sm:text-left text-center">{currentService?.name}</h2>
+                  <h2 className="font-bold  text-lg sm:text-left text-center">{currentService?.name}</h2>
                   <p className="text-sm text-gray-500 sm:text-left text-center">{currentService?.description}</p>
                   <div className="text-gray-500 text-sm w-full sm:flex grid place-items-center">
                     <ul className="flex flex-col gap-2">
