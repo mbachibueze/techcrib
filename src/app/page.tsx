@@ -681,7 +681,7 @@ export default function Home() {
           <div className="place-items-center justify-center gap-5 flex flex-col w-fit m-auto ">
 
               {/* Header Tabs */}
-            <div className="grid grid-cols-3 sm:text-base text-[2.7vw] sm:gap-12 gap-4 bg-[#c4d5ff] p-2 rounded w-fit">
+            <div className="grid grid-cols-3 sm:text-base text-[2.7vw] sm:gap-12 gap-4 bg-[#c4d5ff] text-[#18194e] p-2 rounded w-fit">
               {services.map((service) => (
                 <span
                   key={service.name}
