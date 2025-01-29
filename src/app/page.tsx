@@ -308,16 +308,16 @@ export default function Home() {
     key='4'
       src="/mastercard.svg"  // Path from the public folder
       alt="Description of Image"
-      width={150}                  // Image width
-      height={100}                 // Image height
+      width={75}                  // Image width
+      height={25}                 // Image height
     />,
 
     <Image
     key='4'
       src="/arduino.svg"  // Path from the public folder
       alt="Description of Image"
-      width={150}                  // Image width
-      height={100}                 // Image height
+      width={75}                  // Image width
+      height={50}                 // Image height
     />,
 
     <Image
