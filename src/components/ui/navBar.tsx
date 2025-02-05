@@ -46,8 +46,8 @@ export const NavigationBar = () => {
                 <Link href="/team">
                   <li className="cursor-pointer">Our Team</li>
                 </Link>
-                <Link href="/contact">
-                  <li className="cursor-pointer">Contact</li>
+                <Link href="/projects">
+                  <li className="cursor-pointer">Projects</li>
                 </Link>
               </ul>
             </div>
@@ -80,8 +80,8 @@ export const NavigationBar = () => {
                       <Link href="/team">
                         <li className="cursor-pointer">Our Team</li>
                       </Link>
-                      <Link href="/contact">
-                        <li className="cursor-pointer">Contact</li>
+                      <Link href="/projects">
+                        <li className="cursor-pointer">Projects</li>
                       </Link>
                     </ul>
                   </div>
