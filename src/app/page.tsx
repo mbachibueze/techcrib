@@ -120,7 +120,7 @@ export default function Home() {
       <div>
         <img
           src="https://img.freepik.com/free-photo/worldface-american-man-white-background_53876-31194.jpg?uid=R77772689&ga=GA1.1.746289648.1661586601&semt=ais_hybrid"
-          style={{ width: "300px", height: "250px", borderRadius: "15px" }} // Styling
+          style={{ width: "300px", height: "250px", borderRadius: "15px", objectFit: "cover" }} // Styling
         />
       </div>
       <div className="flex justify-between items-center">
@@ -155,7 +155,7 @@ export default function Home() {
       <div>
         <img
           src="https://img.freepik.com/premium-photo/minimal-head-shoulders-portrait-handsome-africanamerican-man-looking-camera-against-blue_236854-33949.jpg?uid=R77772689&ga=GA1.1.746289648.1661586601&semt=ais_hybrid"
-          style={{ width: "300px", height: "250px", borderRadius: "15px" }} // Styling
+          style={{ width: "300px", height: "250px", borderRadius: "15px", objectFit: "cover" }} // Styling
         />
       </div>
       <div className="flex justify-between items-center">
@@ -190,7 +190,7 @@ export default function Home() {
       <div>
         <img
           src="https://img.freepik.com/premium-photo/afro-american-woman-mixed-race-posing-dark-background-urban-clothes-modern-pretty-smiling_188913-1681.jpg?uid=R77772689&ga=GA1.1.746289648.1661586601&semt=ais_hybrid"
-          style={{ width: "300px", height: "250px", borderRadius: "15px" }} // Styling
+          style={{ width: "300px", height: "250px", borderRadius: "15px", objectFit: "cover" }} // Styling
         />
       </div>
       <div className="flex justify-between items-center">
@@ -226,7 +226,7 @@ export default function Home() {
         <img
           src="https://img.freepik.com/free-photo/confident-business-woman-portrait-smiling-face_53876-137693.jpg?uid=R77772689&ga=GA1.1.746289648.1661586601&semt=ais_hybrid" 
           alt="Description of the image"
-          style={{ width: "300px", height: "250px", borderRadius: "15px" }} // Styling
+          style={{ width: "300px", height: "250px", borderRadius: "15px", objectFit: "cover" }} // Styling
         />
       </div>
       <div className="flex justify-between items-center">
@@ -381,7 +381,7 @@ export default function Home() {
         <Toaster />
 
         {/* Hero Section */}
-        <section className="hero md:w-[90%] w-[95%] m-auto flex flex-col justify-around py-20 gap-5 lg:grid lg:grid-cols-2  h-screen text-center lg:text-left">
+        <section className="hero lg:w-[80%] md:w-[90%] w-[95%] m-auto flex flex-col justify-around py-20 gap-5 lg:grid lg:grid-cols-2  h-screen text-center lg:text-left">
 
           <div className="grid place-items-center " data-aos="fade-right" data-aos-duration="800">
             
@@ -561,7 +561,7 @@ export default function Home() {
         </section>
 
         {/* Ratings */}
-        <section className="md:w-[90%] w-[95%] m-auto py-5 border-y-2">
+        <section className="lg:w-[80%] md:w-[90%] w-[95%] m-auto py-5 border-y-2">
         <div className="flex justify-around gap-5 flex-wrap">
 
           <div className="flex flex-col gap-1 text-center items-center md:items-start">
@@ -614,7 +614,7 @@ export default function Home() {
         </section>
 
         {/* Companies */}
-        <section className="md:w-[90%] w-[100%] m-auto py-5 flex flex-col gap-5 overflow-x-visible">
+        <section className="lg:w-[80%] md:w-[90%] w-[100%] m-auto py-5 flex flex-col gap-5 overflow-x-visible">
           <h3 className="text-center text-md text-gray-600">Trusted by Big Companies</h3>
           <div className="flex justify-around">
           <Carousel 
@@ -641,10 +641,10 @@ export default function Home() {
       </section>
         
         {/* Work flow */}
-        <section className=" bg-[#18194e] text-white">
-          <div className="md:w-[90%] w-[95%] m-auto py-10">
-            <div className="grid lg:grid-cols-2 gap-5">
-              <div className="grid md:grid-cols-2 gap-2">
+        <section className="relative text-white lg:py-5 bg-[#18194e] before:absolute before:top-0 before:left-0 before:w-full before:h-[10px] before:bg-gradient-to-b before:from-white before:to-[#18194e] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[10px] after:bg-gradient-to-t after:from-white after:to-[#18194e]">
+          <div className="lg:w-[80%] md:w-[90%] w-[95%] m-auto py-10">
+            <div className="grid lg:grid-cols-2 gap-10">
+              <div className="grid md:grid-cols-2 gap-3">
 
                 <div className="border-[1px] border-gray-500 p-3 rounded-[20px] grid grid-cols-5 gap-6 items-center">
                   <div className="bg-gray-500  w-[3.5rem] h-[3.5rem]  grid place-items-center rounded-full  ">
@@ -696,76 +696,81 @@ export default function Home() {
                 <h2 className="md:text-[2.5vw] text-[4vw] text-center md:text-left">
                   Easy, Dynamic, and Optimal Workflow
                 </h2>
-                <p className="lg:text-[1.1vw] md:text-[2vw] text-[3vw] sm:text-[2vw] text-gray-400 text-center md:text-left">We adhere to the finest, and uncomplicated operational methods to optimize your business expansion</p>
+                <p className="lg:text-[1.3vw] md:text-[2vw] text-[3vw] sm:text-[2vw] text-gray-400 text-center md:text-left">We adhere to the finest, and uncomplicated operational methods to optimize your business expansion</p>
               </div>
             </div>
           </div>
         </section>
 
         {/* Services */}
-        <section className="md:w-[90%] w-[95%] m-auto py-10 flex flex-col gap-8">
+        <section className="lg:w-[80%] md:w-[90%] w-[95%] m-auto py-10 flex flex-col gap-8">
           <div className="md:grid md:grid-cols-2 flex flex-col gap-5 items-center text-center md:text-left">
             <h2 className="lg:text-5xl text-3xl font-semibold">Services That Add Significant <span className="bg-gradient-to-r from-[#272ba0] to-[#a0baff] bg-clip-text text-transparent">Business</span> Value</h2>
-            <p className="text-sm lg:text-lg text-gray-500">Our offerings encompass services that serce as startup mentoring or include, contributing to the enhanced value proposition of your business</p>
+            <p className="text-sm lg:text-xl text-gray-500 lg:hidden">Our offerings encompass services that serce as startup mentoring or include, contributing to the enhanced value proposition of your business</p>
           </div>
 
+          <div className="flex flex-row gap-5 w-fit m-auto items-center">
+              <div><p className="text-sm lg:text-xl text-gray-500 lg:block">Our offerings encompass services that serce as startup mentoring or include, contributing to the enhanced value proposition of your business</p></div>
 
-          <div className="place-items-center justify-center gap-5 flex flex-col w-fit m-auto ">
+            <div className="place-items-center justify-center gap-5 flex flex-col w-fit m-auto ">
 
-              {/* Header Tabs */}
-            <div className="grid grid-cols-3 sm:text-base text-[2.7vw] sm:gap-12 gap-4 bg-[#c4d5ff] text-[#18194e] p-2 rounded w-fit">
-              {services.map((service) => (
-                <span
-                  key={service.name}
-                  className={`services ${
-                    activeService === service.name ? 'bg-[#18194e] text-white' : ''
-                  }`}
-                  onClick={() => setActiveService(service.name)}
-                >
-                  {service.name}
-                </span>
-              ))}
-            </div>
-            
-            {/* Content Area */}
-            <div className="border-[3px] border-[#c4d5ff] rounded-md sm:w-[624.16px] w-fit p-2">
-              <div className="grid sm:grid-cols-2 grid-cols-1 gap-4 m-auto">
-                {/* Image */}
-                <div className="bg-[#c4d5ff] text-[#18194e] rounded-sm sm:block sm:h-full h-[200px]">
-                  <img
-                    src={currentService?.image}
-                    alt={currentService?.name}
-                    className="rounded-md w-full h-full object-cover "
-                  />
-                </div>
+                {/* Header Tabs */}
+              <div className="grid grid-cols-3 sm:text-base text-[2.7vw] sm:gap-12 gap-4 bg-[#c4d5ff] text-[#18194e] p-2 rounded w-fit">
+                {services.map((service) => (
+                  <span
+                    key={service.name}
+                    className={`services ${
+                      activeService === service.name ? 'bg-[#18194e] text-white' : ''
+                    }`}
+                    onClick={() => setActiveService(service.name)}
+                  >
+                    {service.name}
+                  </span>
+                ))}
+              </div>
+              
+              {/* Content Area */}
+              <div className="border-[3px] border-[#c4d5ff] rounded-md sm:w-[624.16px] w-fit p-2">
+                <div className="grid sm:grid-cols-2 grid-cols-1 gap-4 m-auto">
+                  {/* Image */}
+                  <div className="bg-[#c4d5ff] text-[#18194e] rounded-sm sm:block sm:h-full h-[200px]">
+                    <img
+                      src={currentService?.image}
+                      alt={currentService?.name}
+                      className="rounded-md w-full h-full object-cover "
+                    />
+                  </div>
 
-                {/* Write up */}
-                <div className="flex flex-col gap-2">
-                  <h2 className="font-bold  text-lg sm:text-left text-center">{currentService?.name}</h2>
-                  <p className="text-sm text-gray-500 sm:text-left text-center">{currentService?.description}</p>
-                  <div className="text-gray-500 text-sm w-full sm:flex grid place-items-center">
-                    <ul className="flex flex-col gap-2">
-                      {currentService?.items.map((item, index) => (
-                        <li key={index}>
-                          <span className="text-white text-xs px-2 bg-[#5a6afa] rounded-full">
-                            {index + 1}
-                          </span>{' '}
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
+                  {/* Write up */}
+                  <div className="flex flex-col gap-2">
+                    <h2 className="font-bold  text-lg sm:text-left text-center">{currentService?.name}</h2>
+                    <p className="text-sm text-gray-500 sm:text-left text-center">{currentService?.description}</p>
+                    <div className="text-gray-500 text-sm w-full sm:flex grid place-items-center">
+                      <ul className="flex flex-col gap-2">
+                        {currentService?.items.map((item, index) => (
+                          <li key={index}>
+                            <span className="text-white text-xs px-2 bg-[#5a6afa] rounded-full">
+                              {index + 1}
+                            </span>{' '}
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
+
             </div>
 
           </div>
+
 
         </section>
 
         {/* FAQ's */}
-        <section className="md:w-[90%] w-[95%] m-auto py-10 flex flex-col gap-4">
-          <div className="  md:text-[4vw] lg:text-[3vw] text-[6vw] text-center">FAQ's</div>
+        <section className="lg:w-[80%] md:w-[90%] w-[95%] m-auto py-10 flex flex-col gap-4">
+          <div className="  md:text-[4vw] lg:text-[3vw] text-[6vw] text-center lg:text-left">FAQ's</div>
           <Accordion type="single" collapsible>
               <AccordionItem value="item-1">
                 <AccordionTrigger className="sm:text-lg text-md">What services do you offer to advance my business?</AccordionTrigger>
@@ -802,7 +807,7 @@ export default function Home() {
 
         {/* Evolution */}
         <section>
-          <div className="md:w-[90%] w-[95%] m-auto py-10 md:grid md:grid-cols-2 flex flex-col gap-10 items-center">
+          <div className="lg:w-[80%] md:w-[90%] w-[95%] m-auto py-10 md:grid md:grid-cols-2 flex flex-col gap-10 items-center">
 
             <div className="grid grid-cols-1 gap-3 border-3 border-red-600">
               <div>
@@ -815,7 +820,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex flex-col gap-5 text-gray-500 text-center md:text-left md:text-base text-sm">
+            <div className="flex flex-col gap-5 text-gray-500 text-center md:text-left md:text-base text-sm lg:text-lg">
               <p>We've established a platform for budding enterpreneurs to master the art of initiating and expanding their business successfully</p>
               <p>We encompass all aspects from initiation to expansion, even embracing setbacks. In a world where success often centers on a few, we're here to explore what unfolds beyond the elevator pitch</p>
             </div>
@@ -824,7 +829,7 @@ export default function Home() {
 
         {/* Crew */}
         <section>
-          <div className="md:w-[90%] w-[95%] m-auto py-10 flex flex-col gap-5">
+          <div className="lg:w-[80%] md:w-[90%] w-[95%] m-auto py-10 flex flex-col gap-5">
             <div>
               <h1 className="md:text-[4vw] lg:text-[3vw] text-[6vw] text-center md:text-left">Meet our Creative crew.</h1>
               <p className="text-gray-500 text-center md:text-left md:text-base text-sm">Exploring the Talented members of Our Creative Crew</p>

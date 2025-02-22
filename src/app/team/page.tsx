@@ -76,7 +76,7 @@ const Team = () => {
       </div>
 
       {/* Team */}
-      <div className='grid  gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  md:w-[90%] w-[95%] m-auto place-items-center  my-5'>
+      <div className='grid  gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:w-[80%] md:w-[90%] w-[95%] m-auto place-items-center  my-5 pb-10'>
 
         {cardData.map((d,i) => (
           <TeamCard

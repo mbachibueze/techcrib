@@ -76,7 +76,7 @@ const Footer = () => {
     <div>
       {/* Footer */}
             <section className="bg-[#18194e] text-white">
-                <div className="md:w-[90%] w-[95%] m-auto py-5">
+                <div className="lg:w-[80%] md:w-[90%] w-[95%] m-auto py-5">
                   <div className="flex justify-between items-center py-10 border-b-2 border-gray-600">
                     <h1 className="lg:text-[2.2vw] md:text-[3w] sm:text-[2.5vw] ">Got an exciting project idea? <br/> Let's have a conversation about it. </h1>
 

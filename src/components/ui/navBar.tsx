@@ -29,8 +29,8 @@ export const NavigationBar = () => {
   return (
       <div>
         {/* Navigation */}
-        <section className="fixed w-full z-50 backdrop-blur-lg bg-white/50 shadow-md ">
-          <div className="flex justify-between py-3 items-center md:w-[90%] w-[95%] m-auto ">
+        <section className="fixed w-full z-50 backdrop-blur-lg bg-white/50 ">
+          <div className="flex justify-between py-3 items-center lg:w-[80%] md:w-[90%] w-[95%] m-auto ">
             {/* Logo */}
             <div className="text-xl font-mono font-bold">TechCrib</div>
 
