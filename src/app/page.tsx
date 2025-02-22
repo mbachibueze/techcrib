@@ -641,7 +641,12 @@ export default function Home() {
       </section>
         
         {/* Work flow */}
-        <section className="relative text-white lg:py-5 bg-[#18194e] before:absolute before:top-0 before:left-0 before:w-full before:h-[10px] before:bg-gradient-to-b before:from-white before:to-[#18194e] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[10px] after:bg-gradient-to-t after:from-white after:to-[#18194e]">
+        <section className="relative bg-[#18194e] text-white lg:py-5"
+  style={{
+    WebkitMaskImage: "linear-gradient(to bottom, transparent 0px, #000 15px, #000 calc(100% - 15px), transparent 100%)",
+    maskImage: "linear-gradient(to bottom, transparent 0px, #000 15px, #000 calc(100% - 15px), transparent 100%)"
+  }}
+>
           <div className="lg:w-[80%] md:w-[90%] w-[95%] m-auto py-10">
             <div className="grid lg:grid-cols-2 gap-10">
               <div className="grid md:grid-cols-2 gap-3">

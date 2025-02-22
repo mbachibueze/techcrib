@@ -75,7 +75,12 @@ const Footer = () => {
   return (
     <div>
       {/* Footer */}
-            <section className="relative text-white lg:py-5 bg-[#18194e] before:absolute before:top-0 before:left-0 before:w-full before:h-[10px] before:bg-gradient-to-b before:from-white before:to-[#18194e]">
+            <section className="relative bg-[#18194e] text-white lg:py-5"
+  style={{
+    WebkitMaskImage: "linear-gradient(to bottom, transparent 0px, #000 15px, #000 100%)",
+    maskImage: "linear-gradient(to bottom, transparent 0px, #000 15px, #000 100%)"
+  }}
+>
                 <div className="lg:w-[80%] md:w-[90%] w-[95%] m-auto py-5">
                   <div className="flex justify-between items-center py-10 border-b-2 border-gray-600">
                     <h1 className="lg:text-[2.2vw] md:text-[3w] sm:text-[2.5vw] ">Got an exciting project idea? <br/> Let's have a conversation about it. </h1>
