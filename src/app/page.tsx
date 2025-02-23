@@ -652,7 +652,7 @@ export default function Home() {
               <div className="grid md:grid-cols-2 gap-2">
 
                 <div className="border-[1px] border-gray-500 p-3 rounded-[20px] grid grid-cols-5 gap-6 items-center">
-                  <div className="bg-gray-500  w-[3.5rem] h-[3.5rem]  grid place-items-center rounded-full  ">
+                  <div className="bg-gray-500  w-[3rem] h-[3rem]  grid place-items-center rounded-full  ">
                     <RiQuillPenAiFill
                     size={30}/>
                   </div>
@@ -664,7 +664,7 @@ export default function Home() {
                 </div>
 
                 <div className="border-[1px] border-gray-500 p-3 rounded-[20px] grid grid-cols-5 gap-6 items-center">
-                  <div className="bg-gray-500  w-[3.5rem] h-[3.5rem]  grid place-items-center rounded-full  ">
+                  <div className="bg-gray-500  w-[3rem] h-[3rem]  grid place-items-center rounded-full  ">
                     <HiOutlinePresentationChartBar
                     size={30}/>
                   </div>
@@ -675,7 +675,7 @@ export default function Home() {
                 </div>
 
                 <div className="border-[1px] border-gray-500 p-3 rounded-[20px] grid grid-cols-5 gap-6 items-center">
-                  <div className="bg-gray-500  w-[3.5rem] h-[3.5rem]  grid place-items-center rounded-full  ">
+                  <div className="bg-gray-500  w-[3rem] h-[3rem]  grid place-items-center rounded-full  ">
                     <GiCubes
                     size={30}/>
                   </div>
@@ -686,7 +686,7 @@ export default function Home() {
                 </div>
 
                 <div className="border-[1px] border-gray-500 p-3 rounded-[20px] grid grid-cols-5 gap-6 items-center">
-                  <div className="bg-gray-500  w-[3.5rem] h-[3.5rem]  grid place-items-center rounded-full  ">
+                  <div className="bg-gray-500  w-[3rem] h-[3rem]  grid place-items-center rounded-full  ">
                     <SiRoamresearch
                     size={30}/>
                   </div>
