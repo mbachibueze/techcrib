@@ -648,8 +648,8 @@ export default function Home() {
   }}
 >
           <div className="lg:w-[80%] md:w-[90%] w-[95%] m-auto py-10">
-            <div className="grid lg:grid-cols-2 gap-10">
-              <div className="grid md:grid-cols-2 gap-3">
+            <div className="grid lg:grid-cols-2 gap-5">
+              <div className="grid md:grid-cols-2 gap-2">
 
                 <div className="border-[1px] border-gray-500 p-3 rounded-[20px] grid grid-cols-5 gap-6 items-center">
                   <div className="bg-gray-500  w-[3.5rem] h-[3.5rem]  grid place-items-center rounded-full  ">
