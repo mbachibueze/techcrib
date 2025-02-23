@@ -552,7 +552,7 @@ export default function Home() {
 
           <div className="grid place-items-center" data-aos="fade-up" data-aos-duration="1400">
           <Image
-              src="/globe.png"  // Path from the public folder
+              src="/techy.png"  // Path from the public folder
               alt="Description of Image"
               width={500}                  // Image width
               height={400}                 // Image height
