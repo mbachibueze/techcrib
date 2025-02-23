@@ -552,7 +552,7 @@ export default function Home() {
 
           <div className="grid place-items-center" data-aos="fade-up" data-aos-duration="1400">
           <Image
-              src="/techy.png"  // Path from the public folder
+              src="/globe.png"  // Path from the public folder
               alt="Description of Image"
               width={600}                  // Image width
               height={500}                 // Image height
@@ -643,8 +643,8 @@ export default function Home() {
         {/* Work flow */}
         <section className="relative bg-[#18194e] text-white lg:py-5"
   style={{
-    WebkitMaskImage: "linear-gradient(to bottom, transparent 0px, #000 15px, #000 calc(100% - 15px), transparent 100%)",
-    maskImage: "linear-gradient(to bottom, transparent 0px, #000 15px, #000 calc(100% - 15px), transparent 100%)"
+    WebkitMaskImage: "linear-gradient(to bottom, transparent 0px, #000 20px, #000 calc(100% - 20px), transparent 100%)",
+    maskImage: "linear-gradient(to bottom, transparent 0px, #000 20px, #000 calc(100% - 20px), transparent 100%)"
   }}
 >
           <div className="lg:w-[80%] md:w-[90%] w-[95%] m-auto py-10">
@@ -714,7 +714,7 @@ export default function Home() {
             <p className="text-sm lg:text-xl text-gray-500 lg:hidden">Our offerings encompass services that serce as startup mentoring or include, contributing to the enhanced value proposition of your business</p>
           </div>
 
-          <div className="flex flex-row lg:gap-5 w-fit m-auto items-center">
+          <div className="flex flex-row lg:grid lg:grid-cols-2 lg:gap-5 w-fit m-auto items-center">
               <div><p className="text-sm lg:text-xl text-gray-500 lg:block hidden">Our offerings encompass services that serce as startup mentoring or include, contributing to the enhanced value proposition of your business</p></div>
 
             <div className="place-items-center justify-center gap-5 flex flex-col w-fit m-auto ">
@@ -774,7 +774,7 @@ export default function Home() {
         </section>
 
         {/* FAQ's */}
-        <section className="lg:w-[80%] md:w-[90%] w-[95%] m-auto py-10 flex flex-col gap-4">
+        <section className="lg:w-[80%] md:w-[90%] w-[95%] m-auto py-10z flex flex-col gap-4">
           <div className="  md:text-[4vw] lg:text-[3vw] text-[6vw] text-center lg:text-left">FAQ's</div>
           <Accordion type="single" collapsible>
               <AccordionItem value="item-1">
