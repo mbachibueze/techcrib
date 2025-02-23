@@ -381,7 +381,7 @@ export default function Home() {
         <Toaster />
 
         {/* Hero Section */}
-        <section className="hero lg:w-[80%] md:w-[90%] w-[95%] m-auto flex flex-col justify-around py-20 gap-5 lg:grid lg:grid-cols-2  h-screen text-center lg:text-left">
+        <section className="hero lg:w-[80%] md:w-[90%] w-[95%] m-auto flex flex-col justify-around py-20 gap-5 lg:grid lg:grid-cols-2  h-screen text-center lg:text-left mt-5">
 
           <div className="grid place-items-center " data-aos="fade-right" data-aos-duration="800">
             
@@ -554,8 +554,8 @@ export default function Home() {
           <Image
               src="/globe.png"  // Path from the public folder
               alt="Description of Image"
-              width={600}                  // Image width
-              height={500}                 // Image height
+              width={500}                  // Image width
+              height={400}                 // Image height
             />
           </div>
         </section>
