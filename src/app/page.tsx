@@ -714,7 +714,7 @@ export default function Home() {
             <p className="text-sm lg:text-xl text-gray-500 lg:hidden">Our offerings encompass services that serce as startup mentoring or include, contributing to the enhanced value proposition of your business</p>
           </div>
 
-          <div className="flex flex-row lg:grid lg:grid-cols-2 lg:gap-20 w-fit m-auto items-center">
+          <div className="flex flex-row lg:grid lg:grid-cols-2 lg:gap-5 w-fit m-auto items-center">
               <div><p className="text-sm lg:text-xl text-gray-500 lg:block hidden">Our offerings encompass services that serce as startup mentoring or include, contributing to the enhanced value proposition of your business</p></div>
 
             <div className="place-items-center justify-center gap-5 flex flex-col w-fit m-auto ">
