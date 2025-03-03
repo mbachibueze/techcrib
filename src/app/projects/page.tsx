@@ -60,8 +60,8 @@ const Projects = () => {
 
       {/* Hero Section */}
       <div className='w-[100%] sm:h-[40vh] h-[30vh] sm:mt-0 mt-10  grid place-items-center '>
-        <div className="lg:text-[4vw] text-[7vw]  text-center font-semibold">
-              Advance your <span className="bg-gradient-to-r from-[#272ba0] to-[#a0baff] bg-clip-text text-transparent">business</span>  to new heights.
+        <div className="lg:w-[80%] md:w-[90%] w-[95%] lg:text-[5vw] text-[5vw]  text-center font-semibold">
+              Advance your <span className="bg-gradient-to-r from-[#272ba0] to-[#a0baff] bg-clip-text text-transparent">business</span>  to new heights and Beyond
           </div>
       </div>
 

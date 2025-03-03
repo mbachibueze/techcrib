@@ -386,7 +386,7 @@ export default function Home() {
           <div className="grid place-items-center " data-aos="fade-right" data-aos-duration="800">
             
             <div className="flex flex-col gap-12">
-              <div className="lg:text-[4vw] text-[7vw] font-semibold">
+              <div className="lg:text-[4vw] text-[7vw] font-semibold leading-tight">
                 Advance your <span className="bg-gradient-to-r from-[#272ba0] to-[#a0baff] bg-clip-text text-transparent">business</span>  to new heights.
               </div>
               <div className="flex flex-col gap-4">
@@ -648,17 +648,17 @@ export default function Home() {
   }}
 >
           <div className="lg:w-[80%] md:w-[90%] w-[95%] m-auto py-10">
-            <div className="grid lg:grid-cols-2 gap-5">
-              <div className="grid md:grid-cols-2 gap-2">
+            <div className="grid lg:grid-cols-3 gap-5">
+              <div className=" col-span-2 grid md:grid-cols-2 gap-2">
 
                 <div className="border-[1px] border-gray-500 p-3 rounded-[20px] grid grid-cols-5 gap-6 items-center">
                   <div className="bg-gray-500  w-[3rem] h-[3rem]  grid place-items-center rounded-full  ">
                     <RiQuillPenAiFill
-                    size={30}/>
+                    size="30px"/>
                   </div>
 
                   <div className="col-span-4 flex flex-col gap-1">
-                    <h3 className="lg:text-2xl text-xl">Designing</h3>
+                    <h3 className="lg:text-2xl md:text-xl text-base">Designing</h3>
                     <p className="text-gray-400 text-sm">Designed according to client's requirements</p>
                   </div>
                 </div>
@@ -714,13 +714,14 @@ export default function Home() {
             <p className="text-sm lg:text-xl text-gray-500 lg:hidden">Our offerings encompass services that serce as startup mentoring or include, contributing to the enhanced value proposition of your business</p>
           </div>
 
-          <div className="flex flex-row lg:grid lg:grid-cols-2 lg:gap-5 w-fit m-auto items-center">
-              <div><p className="text-sm lg:text-xl text-gray-500 lg:block hidden">Our offerings encompass services that serce as startup mentoring or include, contributing to the enhanced value proposition of your business</p></div>
+          <div className="flex flex-row justify-between lg:gap-[3vw]  m-auto items-center ">
 
-            <div className="place-items-center justify-center gap-5 flex flex-col w-fit m-auto ">
+            <div><p className="text-sm lg:text-xl text-gray-500 lg:block hidden">Our offerings encompass services that serce as startup mentoring or include, contributing to the enhanced value proposition of your business</p></div>
+
+            <div className="place-items-center justify-center gap-5 flex flex-col w-fit m-auto col-span-2">
 
                 {/* Header Tabs */}
-              <div className="grid grid-cols-3 sm:text-base text-[2.7vw] lg:text-[1.2vw] sm:gap-12 gap-4 bg-[#c4d5ff] text-[#18194e] p-2 rounded w-fit">
+              <div className="grid grid-cols-3 sm:text-base text-[2.7vw] lg:text-[1vw] sm:gap-12 gap-4 bg-[#c4d5ff] text-[#18194e] p-2 rounded lg:w-[100%] w-fit">
                 {services.map((service) => (
                   <span
                     key={service.name}
@@ -735,10 +736,10 @@ export default function Home() {
               </div>
               
               {/* Content Area */}
-              <div className="border-[3px] border-[#c4d5ff] rounded-md sm:w-[624.16px] w-fit p-2">
+              <div className="border-[3px] border-[#c4d5ff] rounded-md w-[624.16px]  p-2">
                 <div className="grid sm:grid-cols-2 grid-cols-1 gap-4 m-auto">
                   {/* Image */}
-                  <div className="bg-[#c4d5ff] text-[#18194e] rounded-sm sm:block sm:h-full h-[200px]">
+                  <div className="bg-[#c4d5ff] text-[#18194e] rounded-sm sm:block h-[100%] ">
                     <img
                       src={currentService?.image}
                       alt={currentService?.name}
