@@ -739,7 +739,7 @@ export default function Home() {
               <div className="border-[3px] border-[#c4d5ff] rounded-md w-[624.16px]  p-2">
                 <div className="grid sm:grid-cols-2 grid-cols-1 gap-4 m-auto">
                   {/* Image */}
-                  <div className="bg-[#c4d5ff] text-[#18194e] rounded-sm sm:block h-[100%] ">
+                  <div className="bg-[#c4d5ff] text-[#18194e] rounded-sm sm:block sm:h-full h-[200px]">
                     <img
                       src={currentService?.image}
                       alt={currentService?.name}
