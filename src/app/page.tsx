@@ -648,7 +648,7 @@ export default function Home() {
   // }}
 >
           <div className="lg:w-[80%] md:w-[90%] w-[95%] m-auto py-10">
-            <div className="grid lg:grid-cols-3 gap-5">
+            <div className="grid lg:grid-cols-3 gap-5 lg:gap-10">
               <div className=" col-span-2 grid md:grid-cols-2 gap-2">
 
                 <div className="border-[1px] border-gray-500 p-3 rounded-[20px] grid grid-cols-5 gap-6 items-center">
@@ -711,12 +711,12 @@ export default function Home() {
         <section className="lg:w-[80%] md:w-[90%] w-[95%] m-auto py-10 flex flex-col gap-8">
           <div className="md:grid md:grid-cols-2 flex flex-col gap-5 items-center text-center md:text-left">
             <h2 className="lg:text-5xl text-3xl font-semibold">Services That Add Significant <span className="bg-gradient-to-r from-[#272ba0] to-[rgb(160,186,255)] bg-clip-text text-transparent">Business</span> Value</h2>
-            <p className="text-sm lg:text-xl text-gray-500 lg:hidden">Our offerings encompass services that serce as startup mentoring or include, contributing to the enhanced value proposition of your business</p>
+            <p className="text-sm lg:text-xl text-gray-500 lg:hidden">We provide a comprehensive range of services designed to support and empower startups through personalised mentoring, strategic guidance, and hands-on collaboration. Our goal is to contribute to the growth and development of your business by enhancing its value proposition, refining your market positioning, and equipping you with the tools and insights needed to thrive in a competitive landscape.</p>
           </div>
 
           <div className="flex flex-row justify-between lg:gap-[3vw]  m-auto items-center ">
 
-            <div><p className="text-sm lg:text-xl text-gray-500 lg:block hidden">Our offerings encompass services that serce as startup mentoring or include, contributing to the enhanced value proposition of your business</p></div>
+            <div><p className="text-sm lg:text-xl text-gray-500 lg:block hidden">We provide a comprehensive range of services designed to support and empower startups through personalised mentoring, strategic guidance, and hands-on collaboration. Our goal is to contribute to the growth and development of your business by enhancing its value proposition, refining your market positioning, and equipping you with the tools and insights needed to thrive in a competitive landscape.</p></div>
 
             <div className="place-items-center justify-center gap-5 flex flex-col w-fit m-auto col-span-2">
 
