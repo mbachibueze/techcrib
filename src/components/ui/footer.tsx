@@ -76,10 +76,10 @@ const Footer = () => {
     <div>
       {/* Footer */}
             <section className="relative bg-[#18194e] text-white lg:py-5"
-  style={{
-    WebkitMaskImage: "linear-gradient(to bottom, transparent 0px, #000 15px, #000 100%)",
-    maskImage: "linear-gradient(to bottom, transparent 0px, #000 15px, #000 100%)"
-  }}
+  // style={{
+  //   WebkitMaskImage: "linear-gradient(to bottom, transparent 0px, #000 15px, #000 100%)",
+  //   maskImage: "linear-gradient(to bottom, transparent 0px, #000 15px, #000 100%)"
+  // }}
 >
                 <div className="lg:w-[80%] md:w-[90%] w-[95%] m-auto py-5">
                   <div className="flex justify-between items-center py-10 border-b-2 border-gray-600">

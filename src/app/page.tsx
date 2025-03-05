@@ -642,10 +642,10 @@ export default function Home() {
         
         {/* Work flow */}
         <section className="relative bg-[#18194e] text-white lg:py-5"
-  style={{
-    WebkitMaskImage: "linear-gradient(to bottom, transparent 0px, #000 20px, #000 calc(100% - 20px), transparent 100%)",
-    maskImage: "linear-gradient(to bottom, transparent 0px, #000 20px, #000 calc(100% - 20px), transparent 100%)"
-  }}
+  // style={{
+  //   WebkitMaskImage: "linear-gradient(to bottom, transparent 0px, #000 20px, #000 calc(100% - 20px), transparent 100%)",
+  //   maskImage: "linear-gradient(to bottom, transparent 0px, #000 20px, #000 calc(100% - 20px), transparent 100%)"
+  // }}
 >
           <div className="lg:w-[80%] md:w-[90%] w-[95%] m-auto py-10">
             <div className="grid lg:grid-cols-3 gap-5">
@@ -710,7 +710,7 @@ export default function Home() {
         {/* Services */}
         <section className="lg:w-[80%] md:w-[90%] w-[95%] m-auto py-10 flex flex-col gap-8">
           <div className="md:grid md:grid-cols-2 flex flex-col gap-5 items-center text-center md:text-left">
-            <h2 className="lg:text-5xl text-3xl font-semibold">Services That Add Significant <span className="bg-gradient-to-r from-[#272ba0] to-[#a0baff] bg-clip-text text-transparent">Business</span> Value</h2>
+            <h2 className="lg:text-5xl text-3xl font-semibold">Services That Add Significant <span className="bg-gradient-to-r from-[#272ba0] to-[rgb(160,186,255)] bg-clip-text text-transparent">Business</span> Value</h2>
             <p className="text-sm lg:text-xl text-gray-500 lg:hidden">Our offerings encompass services that serce as startup mentoring or include, contributing to the enhanced value proposition of your business</p>
           </div>
 
